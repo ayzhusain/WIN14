@@ -15,7 +15,7 @@ namespace WIN14_Project.Features
         public void GivenIAmOnTheLoginPage()
         {
             driver = new FirefoxDriver();
-            driver.Navigate().GoToUrl("http://localhost:2110/ayaz_folder/index.html");
+            driver.Navigate().GoToUrl("http://localhost:2110/Html/index.html");
         }
 
         [When(@"I input my user name and password")]
@@ -29,7 +29,7 @@ namespace WIN14_Project.Features
         [Then(@"I should get confirmation")]
         public void ThenIShouldGetConfirmation()
         {
-            Assert.True(driver.Title == "Login", "Logged In");
+            Assert.True(driver.Title == "Logged in", "Logged In");
         }
     }
 

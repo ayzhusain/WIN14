@@ -81,11 +81,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ayaz_folder\css\style.css" />
-    <Content Include="ayaz_folder\index.html" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Html\index.html" />
     <Content Include="Html\ConfirmOrder.html" />
     <Content Include="Html\startPage.html" />
-    <Content Include="Html\Login.html" />
     <Content Include="Html\TrackOrder.html" />
     <Content Include="packages.config" />
     <Content Include="Features\Login.feature">
@@ -142,7 +141,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LoggedIn.feature</DependentUpon>
     </Compile>
-    <Compile Include="StepDefenitions\LoggedInSteps.cs" />
     <Compile Include="StepDefenitions\LoginSteps.cs" />
     <Compile Include="Features\Login.feature.cs">
       <AutoGen>True</AutoGen>
