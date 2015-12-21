@@ -14,7 +14,7 @@ namespace WIN14_Project.StepDefenitions
         public void GivenYouHaveChoosenYourProduct()
         {
             driver = new FirefoxDriver();
-            driver.Navigate().GoToUrl("http://localhost:2110/html/ProductDetail.html");
+            driver.Navigate().GoToUrl("http://localhost:2110/html/ProductDescription.html");
         }
 
         [When(@"You have clicked on the product")]
