@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- BC_OBNW -->
+<head>
+    <title>Login</title>
+    <link href="/StyleSheets/ModuleStyleSheets.css" type="text/css" rel="StyleSheet" />
+    <script type="text/javascript">var jslang='SV';</script>
+    <meta charset="UTF-8">
+    <style>
+        input[type=checkbox] {
+            display: none;
+        }
+
+        label {
+            appearance: button;
+            -moz-appearance: button; /* Firefox */
+            -webkit-appearance: button; /* Safari and Chrome */
+            display: inline-block;
+            cursor: pointer;
+            background-color: red;
+            padding: 10px;
+        }
+
+        /* Default State */
+        #toggle {
+            background: green;
+            width: 400px;
+            height: 100px;
+            line-height: 100px;
+            color: white;
+            text-align: center;
+            display: none;
+        }
+
+        /* Toggled State */
+        input[type=checkbox]:checked ~ #toggle {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p>Logged in:</p><input type="text" name="status">
+    </form>
+</body>
+</html>

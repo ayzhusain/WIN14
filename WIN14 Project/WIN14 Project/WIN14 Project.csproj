@@ -83,6 +83,7 @@
   <ItemGroup>
     <Content Include="ayaz folder\css\style.css" />
     <Content Include="ayaz folder\index.html" />
+    <Content Include="Html\startPage.html" />
     <Content Include="Html\Login.html" />
     <Content Include="packages.config" />
     <Content Include="Features\Login.feature">
