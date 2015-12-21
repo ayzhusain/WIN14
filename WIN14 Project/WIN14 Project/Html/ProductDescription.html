@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- BC_OBNW -->
+<head>
+    <title>Confirm Order</title>
+    <link href="/StyleSheets/ModuleStyleSheets.css" type="text/css" rel="StyleSheet" />
+    <script type="text/javascript">var jslang='SV';</script>
+    <meta charset="UTF-8">
+    <style>
+        input[type=checkbox] {
+            display: none;
+        }
+
+        label {
+            appearance: button;
+            -moz-appearance: button; /* Firefox */
+            -webkit-appearance: button; /* Safari and Chrome */
+            display: inline-block;
+            cursor: pointer;
+            background-color: red;
+            padding: 10px;
+        }
+
+        /* Default State */
+        #toggle {
+            background: green;
+            width: 400px;
+            height: 100px;
+            line-height: 100px;
+            color: white;
+            text-align: center;
+            display: none;
+        }
+
+        /* Toggled State */
+        input[type=checkbox]:checked ~ #toggle {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h1>Product Detail</h1>
+    <div class="productDetails">
+        <p>
+
+            <input type="text" id="productId" value="">
+        </p>
+        <p>
+
+            <input type="text" name="productName" value="">
+        </p>
+        <p>
+            <input name="productDescription" value="">
+        </p>
+
+        <img class="picture" style="width:200px;margin:2px;" src="https://www.fillmurray.com/460/300" />
+
+    </div>
+
+</body>
+</html>
