@@ -90,6 +90,10 @@
     <Content Include="Default.srprofile">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Features\LoggedIn.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>LoggedIn.feature.cs</LastGenOutput>
+    </Content>
     <None Include="SpecRunTestProfile.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -104,6 +108,11 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\LoggedIn.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoggedIn.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\LoginSteps.cs" />
     <Compile Include="Features\Login.feature.cs">
       <AutoGen>True</AutoGen>
