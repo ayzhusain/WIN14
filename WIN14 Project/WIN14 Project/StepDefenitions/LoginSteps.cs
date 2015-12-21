@@ -15,7 +15,7 @@ namespace WIN14_Project.Features
         public void GivenIAmOnTheLoginPage()
         {
             driver = new FirefoxDriver();
-            driver.Navigate().GoToUrl("http://localhost:2110/Html/Login.html");
+            driver.Navigate().GoToUrl("http://localhost:2110/ayaz_folder/index.html");
         }
 
         [When(@"I input my user name and password")]
@@ -23,7 +23,7 @@ namespace WIN14_Project.Features
         {
             driver.FindElement(By.Name("login")).SendKeys("sohail");
             driver.FindElement(By.Name("password")).SendKeys("password");
-            driver.FindElement(By.Id("show")).Click();
+            driver.FindElement(By.Id("login-button")).Click();
         }
 
         [Then(@"I should get confirmation")]
