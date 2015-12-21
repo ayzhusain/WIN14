@@ -128,7 +128,6 @@
       <DependentUpon>ConfirmOrder.feature</DependentUpon>
     </Compile>
     <Compile Include="Features\ConfirmOrderSteps.cs" />
-    <Compile Include="Features\LoginSteps.cs" />
     <Compile Include="Features\LoggedIn.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
