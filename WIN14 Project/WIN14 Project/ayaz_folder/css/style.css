@@ -99,7 +99,8 @@ form input:focus {
   width: 300px;
   color: #53e3a6;
 }
-form .button {
+form a.button {
+  display: inline-block;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -114,8 +115,9 @@ form .button {
   font-size: 18px;
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
+   text-decoration: none;
 }
-form .button:hover {
+form a.button:hover {
   background-color: #f5f7f9;
 }
 .bg-bubbles {

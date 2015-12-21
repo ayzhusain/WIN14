@@ -29,7 +29,7 @@ namespace WIN14_Project.Features
         [Then(@"I should get confirmation")]
         public void ThenIShouldGetConfirmation()
         {
-            Assert.True(driver.Title == "Login", "Logged In");
+            Assert.True(driver.Title == "Logged in", "Logged In");
         }
     }
 
