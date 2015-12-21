@@ -15,7 +15,7 @@ namespace WIN14_Project.Features
         public void GivenIAmOnTheLoginPage()
         {
             driver = new FirefoxDriver();
-            driver.Navigate().GoToUrl("http://localhost:2110/ayaz_folder/index.html");
+            driver.Navigate().GoToUrl("http://localhost:2110/Html/index.html");
         }
 
         [When(@"I input my user name and password")]
