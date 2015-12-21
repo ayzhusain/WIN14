@@ -81,6 +81,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Html\Login.html" />
     <Content Include="packages.config" />
     <Content Include="Features\Login.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
