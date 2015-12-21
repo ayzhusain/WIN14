@@ -78,7 +78,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 7
  testRunner.When("You are at the startpage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 8
- testRunner.Then("See your status \"You are logged in\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("See your status", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
