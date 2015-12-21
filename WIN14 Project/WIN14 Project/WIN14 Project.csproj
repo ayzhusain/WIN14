@@ -84,7 +84,9 @@
     <Content Include="ayaz_folder\css\style.css" />
     <Content Include="ayaz_folder\index.html" />
     <Content Include="Html\ConfirmOrder.html" />
+    <Content Include="Html\startPage.html" />
     <Content Include="Html\Login.html" />
+    <Content Include="Html\TrackOrder.html" />
     <Content Include="packages.config" />
     <Content Include="Features\Login.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
