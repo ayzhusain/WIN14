@@ -96,10 +96,6 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Login.feature.cs</LastGenOutput>
     </Content>
-    <Content Include="Features\LoggedIn.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>LoggedIn.feature.cs</LastGenOutput>
-    </Content>
     <Content Include="Features\TrackOrder.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>TrackOrder.feature.cs</LastGenOutput>
@@ -137,12 +133,6 @@
       <DependentUpon>Feedback.feature</DependentUpon>
     </Compile>
     <Compile Include="StepDefenitions\ConfirmOrderSteps.cs" />
-    <Compile Include="Features\LoggedIn.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LoggedIn.feature</DependentUpon>
-    </Compile>
-    <Compile Include="StepDefenitions\LoggedInSteps.cs" />
     <Compile Include="StepDefenitions\LoginSteps.cs" />
     <Compile Include="Features\Login.feature.cs">
       <AutoGen>True</AutoGen>
