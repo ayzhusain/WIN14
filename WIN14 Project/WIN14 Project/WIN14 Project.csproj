@@ -83,8 +83,10 @@
   <ItemGroup>
     <Content Include="ayaz folder\css\style.css" />
     <Content Include="ayaz folder\index.html" />
+    <Content Include="Html\ConfirmOrder.html" />
     <Content Include="Html\startPage.html" />
     <Content Include="Html\Login.html" />
+    <Content Include="Html\TrackOrder.html" />
     <Content Include="packages.config" />
     <Content Include="Features\Login.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -102,6 +104,10 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>TrackOrder.feature.cs</LastGenOutput>
     </Content>
+    <Content Include="Features\ConfirmOrder.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ConfirmOrder.feature.cs</LastGenOutput>
+    </Content>
     <None Include="SpecRunTestProfile.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -116,6 +122,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\ConfirmOrder.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConfirmOrder.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\ConfirmOrderSteps.cs" />
+    <Compile Include="Features\LoginSteps.cs" />
     <Compile Include="Features\LoggedIn.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
