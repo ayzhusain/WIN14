@@ -127,11 +127,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ConfirmOrder.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\Feedback.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Feedback.feature</DependentUpon>
-    </Compile>
     <Compile Include="StepDefenitions\ConfirmOrderSteps.cs" />
     <Compile Include="StepDefenitions\LoginSteps.cs" />
     <Compile Include="Features\Login.feature.cs">
