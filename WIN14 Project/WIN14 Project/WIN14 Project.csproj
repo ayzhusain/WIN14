@@ -114,6 +114,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LoggedIn.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\LoggedInSteps.cs" />
     <Compile Include="Features\LoginSteps.cs" />
     <Compile Include="Features\Login.feature.cs">
       <AutoGen>True</AutoGen>
