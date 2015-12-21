@@ -129,6 +129,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TrackOrder.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\TrackOrderSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
