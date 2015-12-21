@@ -15,7 +15,7 @@ namespace WIN14_Project.Features
         public void GivenThatYouAreLoggedIn()
         {
             driver = new FirefoxDriver();
-            driver.Navigate().GoToUrl("http://localhost:2110/Html/startPage.html");
+            driver.Navigate().GoToUrl("http://localhost:2110/ayaz_folder/index.html");
         }
         
         [When(@"You are at the startpage")]
