@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Feedback</title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
 </head>
 <body>
     <form>
@@ -13,18 +13,16 @@
             <input type="text" name="name" value="" placeholder="Name">
         </p>
         <p>
-            <input type="text" name="orderid" value="123456" placeholder="123456">
+            <input type="text" name="orderid" value="" placeholder="123456">
         </p>
-        <p>
-            <input type="text" name="message" value=""  placeholder="What did you think of our product?">
-        </p>
-        <p>
-            <input type="text" name="message2" value="" placeholder="What did you think of our customer service?">
-        </p>
-        <p>
-            <input type="text" name="message3" value="" placeholder="What do you want us too improve on?">
-        </p>
-        <label id="show" for="toggle">Skicka...</label>
+
+        <textarea name="customerService" rows="4" placeholder="What did you think of our customer service?"></textarea>
+        <br />
+        <textarea name="customerMessage" rows="4" placeholder="What did you think of our product?"></textarea>
+        <br />
+        <textarea mame="customerTips" rows="4" placeholder="What do you think we can improve on?"></textarea>
+        <br />
+        <a id="login-button" class="button" href="../html/startPage.html">Send</a>
     </form>
 </body>
 </html>
