@@ -85,12 +85,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ayaz_folder\css\style.css" />
-    <Content Include="ayaz_folder\index.html" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Html\index.html" />
     <Content Include="Html\ConfirmOrder.html" />
     <Content Include="Html\FeedbackPage.html" />
     <Content Include="Html\startPage.html" />
-    <Content Include="Html\Login.html" />
     <Content Include="Html\TrackOrder.html" />
     <Content Include="packages.config" />
     <Content Include="Features\Login.feature">
@@ -109,13 +108,9 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ConfirmOrder.feature.cs</LastGenOutput>
     </Content>
-    <Content Include="runtests.cmd" />
-    <Content Include="Default.srprofile">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Features\Feedback.feature">
+    <Content Include="Features\Search.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Feedback.feature.cs</LastGenOutput>
+      <LastGenOutput>Search.feature.cs</LastGenOutput>
     </Content>
     <None Include="SpecRunTestProfile.xsd">
       <SubType>Designer</SubType>
@@ -147,7 +142,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LoggedIn.feature</DependentUpon>
     </Compile>
-    <Compile Include="StepDefenitions\FeedbackSteps.cs" />
     <Compile Include="StepDefenitions\LoggedInSteps.cs" />
     <Compile Include="StepDefenitions\LoginSteps.cs" />
     <Compile Include="Features\Login.feature.cs">
