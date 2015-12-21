@@ -108,6 +108,10 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ConfirmOrder.feature.cs</LastGenOutput>
     </Content>
+    <Content Include="Features\Search.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Search.feature.cs</LastGenOutput>
+    </Content>
     <None Include="SpecRunTestProfile.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -126,6 +130,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ConfirmOrder.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Search.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Search.feature</DependentUpon>
     </Compile>
     <Compile Include="StepDefenitions\ConfirmOrderSteps.cs" />
     <Compile Include="Features\LoggedIn.feature.cs">
