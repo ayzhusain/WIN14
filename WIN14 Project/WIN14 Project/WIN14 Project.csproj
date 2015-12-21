@@ -81,8 +81,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ayaz folder\css\style.css" />
-    <Content Include="ayaz folder\index.html" />
+    <Content Include="ayaz_folder\css\style.css" />
+    <Content Include="ayaz_folder\index.html" />
     <Content Include="Html\ConfirmOrder.html" />
     <Content Include="Html\Login.html" />
     <Content Include="packages.config" />
@@ -125,8 +125,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ConfirmOrder.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\ConfirmOrderSteps.cs" />
-    <Compile Include="Features\LoginSteps.cs" />
+    <Compile Include="StepDefenitions\ConfirmOrderSteps.cs" />
     <Compile Include="Features\LoggedIn.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
