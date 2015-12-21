@@ -15,7 +15,7 @@ namespace WIN14_Project.Features
         public void GivenIAmOnTheLoginPage()
         {
             driver = new FirefoxDriver();
-            driver.Navigate().GoToUrl("http://gladahundarx.businesscatalyst.com/form_toggle.html");
+            driver.Navigate().GoToUrl("http://localhost:2110/Html/Login.html");
         }
 
         [When(@"I input my user name and password")]
