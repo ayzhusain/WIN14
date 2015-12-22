@@ -35,6 +35,12 @@
             padding: 10px;
             display: none;
         }
+
+        .related-products img {
+            width: 200px;
+            max-height: 200px;
+        }
+
     </style>
 
     <script type="text/javascript">
@@ -70,12 +76,41 @@
             <input name="productDescription" value="">
         </p>
 
-        <img class="picture" style="width:200px;margin:2px;" src="https://www.fillmurray.com/460/300" />
 
-
-        Antal: 1 st
+        <img src="../Content/images/Toothpick.jpg" />
+        <br />
+        Antal: 1 st<br />
         <label class="buy-button" onclick="showCart()">Lägg i varukorgen</label>
-
+        <br />
     </div>
+
+
+    <hr />
+    Liknande produkter
+    <table class="related-products">
+        <tr>
+            <td>
+                <img src="../Content/images/tandborste.jpg" />
+                <br />
+                €12
+            </td>
+            <td>
+                <img src="../Content/images/tandtrad.jpg" />
+                <br />
+                €12
+            </td>
+            <td>
+                <img src="../Content/images/tandtrad2.jpg" />
+                <br />
+                €12</td>
+            <td>
+                <img src="../Content/images/tandtradbage.jpg" />
+                <br />
+                €12</td>
+        </tr>
+    </table>
+
+
+
 </body>
 </html>
