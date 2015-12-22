@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using System;
 using TechTalk.SpecFlow;
@@ -16,7 +17,7 @@ namespace WIN14_Project
         public void GivenYouAreAtProductPage()
         {
             driver = new FirefoxDriver();
-            driver.Navigate().GoToUrl("https://localhost:2110/html/startPage.html");
+            driver.Navigate().GoToUrl("http://localhost:2110/html/startPage.html");
         }
 
         [When(@"You search for product")]
@@ -29,7 +30,7 @@ namespace WIN14_Project
         [Then(@"See product")]
         public void ThenSeeProduct()
         {
-            driver.FindElement(By.Id("clickThis")).Click();
+            Assert.True(driver.Title == "Logged in", "Logged In");
         }
     }
 }
