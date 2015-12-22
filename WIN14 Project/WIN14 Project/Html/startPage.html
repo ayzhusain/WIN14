@@ -28,14 +28,14 @@
 
     </style>
 </head>
-<body>
+<body onload="toggleHide()">
     <p>You are logged in as Sohail!</p>
     <!--<input id="search" type="search" placeholder="Search" />
     <input id="searchButton" type="submit" value="Go!" />-->
     <form action="">
         Search for products:i
     <input id="search" type="search" placeholder="Search" />
-        <input id="searchButton" type="submit" value="Go!"/>
+        <input id="searchButton" type="button" onclick="toggleShow()" value="Go!"/>
     </form>
     <br />
     <table id="productsTable" width="500">
@@ -64,5 +64,13 @@
             <td><a href="../Html/ProductDescription.html">Mer info</a></td>
         </tr>
     </table>
+    <script>
+        function toggleHide() {
+            document.getElementById("productsTable").style.visibility = "hidden";
+        }
+        function toggleShow() {
+            document.getElementById("productsTable").style.visibility = "visible";
+        }
+    </script>
 </body>
 </html>
