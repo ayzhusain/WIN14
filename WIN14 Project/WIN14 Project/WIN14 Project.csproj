@@ -85,6 +85,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\nunit.framework.dll" />
+    <Content Include="bin\nunit.framework.xml" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\csi.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Console.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\SpecRun.SpecFlowPlugin.dll" />
+    <Content Include="bin\TechTalk.SpecFlow.dll" />
+    <Content Include="bin\TechTalk.SpecRun.dll" />
+    <Content Include="bin\WebDriver.dll" />
+    <Content Include="bin\WebDriver.xml" />
+    <Content Include="bin\WIN14 Project.dll" />
+    <Content Include="bin\WIN14 Project.pdb" />
     <Content Include="Content\css\style.css" />
     <Content Include="Html\index.html" />
     <Content Include="Html\ConfirmOrder.html" />
@@ -92,6 +122,9 @@
     <Content Include="Html\ProductDescription.html" />
     <Content Include="Html\startPage.html" />
     <Content Include="Html\TrackOrder.html" />
+    <Content Include="obj\Debug\WIN14 Project.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\WIN14 Project.dll" />
+    <Content Include="obj\Debug\WIN14 Project.pdb" />
     <Content Include="packages.config" />
     <Content Include="Features\Login.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -117,6 +150,19 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Feedback.feature.cs</LastGenOutput>
     </Content>
+    <Content Include="runtests.cmd" />
+    <Content Include="Default.srprofile" />
+    <Content Include="bin\roslyn\csc.exe.config" />
+    <Content Include="bin\roslyn\csc.rsp" />
+    <Content Include="bin\roslyn\csi.rsp" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\roslyn\vbc.rsp" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="bin\WIN14 Project.dll.config" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\WIN14 Project.csprojResolveAssemblyReference.cache" />
     <None Include="SpecRunTestProfile.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -141,6 +187,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Feedback.feature</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="StepDefenitions\FeedbackSteps.cs" />
     <Compile Include="Features\ProductDescription.feature.cs">
       <AutoGen>True</AutoGen>
@@ -163,7 +212,9 @@
     <Compile Include="StepDefenitions\TrackOrderSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
