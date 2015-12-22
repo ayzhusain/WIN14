@@ -92,12 +92,16 @@ form a.button:hover {
 }
 
 .buy-button {
-    background: green;
+    background: lightgreen;
     color: white;
-    height: 40px;
+    padding: 6px 12px;
     line-height:40px;
-    padding: 5px 40px;
     font-size: 20px;
     cursor: pointer;
+    width: 250px;
+    text-align: center;
+}
+.buy-button:hover {
+    background: #53e3a6;
 }
 

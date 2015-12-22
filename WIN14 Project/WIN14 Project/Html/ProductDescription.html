@@ -29,12 +29,24 @@
             padding: 10px;
             display: none;
         }
-        .related-products img {
-            width: 200px;
-            max-height: 200px;
+        .related-products {
+            clear: both;
         }
-        hr {
-            margin: 50px 0;
+        .related-products-img td img{
+            height: 150px;
+        }
+        .product {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .productDetails {
+        }
+        .productDetails-img {
+            margin-right: 20px;
+        }
+        .productPage {
+            display: flex;
+            flex-direction: column;
         }
     </style>
 
@@ -51,49 +63,47 @@
         <a href="ConfirmOrder.html">Gå till kassan</a>
     </div>
 
-    <h1>Product Detail</h1>
-    <div class="productDetails">
+    <div class="productPage">
+        <h1>Product Detail</h1>
+        <div class="product">
+            <div class="productDetails-img">
+                <img src="../Content/images/Toothpick.jpg" />
+                <br />
+                <label class="buy-button" onclick="showCart()">Lägg i varukorgen</label>
+            </div>
+            <div class="productDetails">
+                <input type="text" id="productId" value="">
+                <br />
+                <input type="text" name="productName" value="">
+                <br />
+                <input name="productDescription" value="">
+                <br />
+                <p>Antal: 1 st</p>
+            </div>
+        </div>
 
-        <p>
-            <input type="text" id="productId" value="">
-        </p>
-        <p>
-            <input type="text" name="productName" value="">
-        </p>
-        <p>
-            <input name="productDescription" value="">
-        </p>
-        <img src="../Content/images/Toothpick.jpg" />
-        <br />
-        Antal: 1 st<br />
-        <label class="buy-button" onclick="showCart()">Lägg i varukorgen</label>
-        <br />
+        <table class="related-products">
+            <tr>
+                <td>
+                    <h3>Liknande produkter</h3>
+                </td>
+            </tr>
+            <tr class="related-products-img">
+                <td>
+                    <img src="../Content/images/tandborste.jpg" />
+                </td>
+                <td>
+                    <img src="../Content/images/tandtrad.jpg" />
+                </td>
+                <td>
+                    <img src="../Content/images/tandtrad2.jpg" />
+                </td>
+                <td>
+                    <img src="../Content/images/tandtradbage.jpg" />
+                </td>
+            </tr>
+        </table>
     </div>
-
-    <hr />
-    <table class="related-products">
-        <h3>Liknande produkter</h3>
-        <tr>
-            <td>
-                <img src="../Content/images/tandborste.jpg" />
-                <br />
-                €12
-            </td>
-            <td>
-                <img src="../Content/images/tandtrad.jpg" />
-                <br />
-                €12
-            </td>
-            <td>
-                <img src="../Content/images/tandtrad2.jpg" />
-                <br />
-                €12</td>
-            <td>
-                <img src="../Content/images/tandtradbage.jpg" />
-                <br />
-                €12</td>
-        </tr>
-    </table>
 
 
 
