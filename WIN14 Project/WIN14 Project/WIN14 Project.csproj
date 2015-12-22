@@ -215,6 +215,7 @@
       <DependentUpon>TrackOrder.feature</DependentUpon>
     </Compile>
     <Compile Include="StepDefenitions\ProductDetailsSteps.cs" />
+    <Compile Include="StepDefenitions\SearchSteps.cs" />
     <Compile Include="StepDefenitions\TrackOrderSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
