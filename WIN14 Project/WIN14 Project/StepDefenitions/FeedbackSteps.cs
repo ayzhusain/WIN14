@@ -21,7 +21,7 @@ namespace WIN14_Project
         public void WhenYouFillInProductSatisfictionForm()
         {
             driver.FindElement(By.Name("name")).SendKeys("sohail");
-            driver.FindElement(By.Name("orderid")).SendKeys("password");
+            driver.FindElement(By.Name("orderid")).SendKeys("1337");
             driver.FindElement(By.Name("customerService")).SendKeys("Skit service");
             driver.FindElement(By.Name("customerMessage")).SendKeys("Skit produkt");
             driver.FindElement(By.Name("customerTips")).SendKeys("Lägg ner....");
@@ -31,7 +31,7 @@ namespace WIN14_Project
         [Then(@"Press send and Show result")]
         public void ThenPressSendAndShowResult()
         {
-            Assert.True(driver.Title == "Feedback", "Feedback");
+            Assert.True(driver.Title == "Logged in", "Logged in");
         }
     }
 }

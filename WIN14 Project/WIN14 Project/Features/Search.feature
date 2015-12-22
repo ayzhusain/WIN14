@@ -5,4 +5,4 @@
 Scenario: Search Product
 	Given You are at product page
 	When You search for product
-	Then See product
+	Then Show products

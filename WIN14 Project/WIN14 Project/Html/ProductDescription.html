@@ -7,60 +7,105 @@
 <head>
     <title>Confirm Order</title>
     <link href="/StyleSheets/ModuleStyleSheets.css" type="text/css" rel="StyleSheet" />
-    <script type="text/javascript">var jslang='SV';</script>
+    <link href="../Content/css/style.css" rel="stylesheet" />
+    <script type="text/javascript">var jslang = 'SV';</script>
     <meta charset="UTF-8">
     <style>
-        input[type=checkbox] {
-            display: none;
+        body {
+            padding: 70px;
         }
-
-        label {
-            appearance: button;
-            -moz-appearance: button; /* Firefox */
-            -webkit-appearance: button; /* Safari and Chrome */
-            display: inline-block;
-            cursor: pointer;
-            background-color: red;
+        input {
+            padding: 6px 12px;
+            margin: 5px 0;
+            width: 250px;
+        }
+        .shopping-cart {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            border-bottom: 1px solid #000;
+            background: #f5f5f5;
             padding: 10px;
-        }
-
-        /* Default State */
-        #toggle {
-            background: green;
-            width: 400px;
-            height: 100px;
-            line-height: 100px;
-            color: white;
-            text-align: center;
             display: none;
         }
-
-        /* Toggled State */
-        input[type=checkbox]:checked ~ #toggle {
-            display: block;
+        .related-products {
+            clear: both;
+        }
+        .related-products-img td img{
+            height: 150px;
+        }
+        .product {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .productDetails {
+        }
+        .productDetails-img {
+            margin-right: 20px;
+        }
+        .productPage {
+            display: flex;
+            flex-direction: column;
         }
     </style>
+
+    <script type="text/javascript">
+        function showCart() {
+            document.getElementById('shopping-cart').style.display = "block";
+        }
+    </script>
+
 </head>
 <body>
-
-
-    <h1>Product Detail</h1>
-    <div class="productDetails">
-        <p>
-
-            <input type="text" id="productId" value="">
-        </p>
-        <p>
-
-            <input type="text" name="productName" value="">
-        </p>
-        <p>
-            <input name="productDescription" value="">
-        </p>
-
-        <img class="picture" style="width:200px;margin:2px;" src="https://www.fillmurray.com/460/300" />
-
+    <div id="shopping-cart" class="shopping-cart">
+        <p>Tandpetare 1 st</p>
+        <a href="ConfirmOrder.html">Gå till kassan</a>
     </div>
+
+    <div class="productPage">
+        <h1>Product Detail</h1>
+        <div class="product">
+            <div class="productDetails-img">
+                <img src="../Content/images/Toothpick.jpg" />
+                <br />
+                <label id="buy-button" class="buy-button" onclick="showCart()">Lägg i varukorgen</label>
+            </div>
+            <div class="productDetails">
+                <input type="text" id="productId" value="">
+                <br />
+                <input type="text" name="productName" value="">
+                <br />
+                <input name="productDescription" value="">
+                <br />
+                <p>Antal: 1 st</p>
+            </div>
+        </div>
+
+        <table class="related-products">
+            <tr>
+                <td>
+                    <h3>Liknande produkter</h3>
+                </td>
+            </tr>
+            <tr class="related-products-img">
+                <td>
+                    <img src="../Content/images/tandborste.jpg" />
+                </td>
+                <td>
+                    <img src="../Content/images/tandtrad.jpg" />
+                </td>
+                <td>
+                    <img src="../Content/images/tandtrad2.jpg" />
+                </td>
+                <td>
+                    <img src="../Content/images/tandtradbage.jpg" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
 
 </body>
 </html>

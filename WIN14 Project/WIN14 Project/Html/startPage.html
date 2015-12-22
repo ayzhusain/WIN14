@@ -10,50 +10,67 @@
 
     <style>
         body {
+            font-family: 'Segoe UI', sans-serif;
             padding: 50px 50px;
             color: #333 !important;
         }
         p {
             margin-bottom: 15px;
+            font-size: 20px;
         }
         #search {
             color: #333;
             padding: 6px 12px;
         }
+        #searchButton {
+            padding: 5px 12px;
+        }
 
     </style>
 </head>
-<body>
+<body onload="toggleHide()">
     <p>You are logged in as Sohail!</p>
     <!--<input id="search" type="search" placeholder="Search" />
     <input id="searchButton" type="submit" value="Go!" />-->
     <form action="">
         Search for products:
-        <input id="search" type="search" placeholder="Search" />
-        <input id="searchButton" type="submit" value="Go!"/>
+    <input id="search" type="search" value="" placeholder="Search" />
+        <input id="searchButton" type="button" onclick="toggleShow()" value="Go!"/>
     </form>
     <br />
     <table id="productsTable" width="500">
-        <tr>
+        <tr class="hidden">
+            <td><img src="../Content/images/Toothpick_mini.jpg" alt="Mini Toothpick"></td>
             <td>Tandpetare</td>
             <td>€99</td>
-            <td><a href="#">Mer info</a></td>
+            <td><a id="clickThis" href="../Html/ProductDescription.html">Mer info</a></td>
         </tr>
-        <tr>
+        <tr class="hidden">
+            <td><img src="../Content/images/Toothpick_mini.jpg" alt="Mini Toothpick"></td>
             <td>Tandpetare</td>
             <td>€99</td>
-            <td><a href="#">Mer info</a></td>
+            <td><a href="../Html/ProductDescription.html">Mer info</a></td>
         </tr>
-        <tr>
+        <tr class="hidden">
+            <td><img src="../Content/images/Toothpick_mini.jpg" alt="Mini Toothpick"></td>
             <td>Tandpetare</td>
             <td>€99</td>
-            <td><a href="#">Mer info</a></td>
+            <td><a href="../Html/ProductDescription.html">Mer info</a></td>
         </tr>
-        <tr>
+        <tr class="hidden">
+            <td><img src="../Content/images/Toothpick_mini.jpg" alt="Mini Toothpick"></td>
             <td>Tandpetare</td>
             <td>€99</td>
-            <td><a href="#">Mer info</a></td>
+            <td><a href="../Html/ProductDescription.html">Mer info</a></td>
         </tr>
     </table>
+    <script>
+        function toggleHide() {
+            document.getElementById("productsTable").style.visibility = "hidden";
+        }
+        function toggleShow() {
+            document.getElementById("productsTable").style.visibility = "visible";
+        }
+    </script>
 </body>
 </html>
