@@ -27,8 +27,8 @@ namespace WIN14_Project
             driver.FindElement(By.Id("searchButton")).Click();
         }
 
-        [Then(@"See product")]
-        public void ThenSeeProduct()
+        [Then(@"Show product")]
+        public void ThenShowProduct()
         {
             Assert.True(driver.Title == "Logged in", "Logged In");
         }
