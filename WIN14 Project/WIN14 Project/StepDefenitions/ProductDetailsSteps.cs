@@ -26,8 +26,8 @@ namespace WIN14_Project.StepDefenitions
         [Then(@"Show product information")]
         public void ThenShowProductInformation()
         {
-            driver.FindElement(By.Name("productName")).SendKeys("Fill Murry");
-            driver.FindElement(By.Name("productDescription")).SendKeys("Din Produkt");
+            driver.FindElement(By.Name("productName")).SendKeys("Tandpetare");
+            driver.FindElement(By.Name("productDescription")).SendKeys("Håll dina munen ren med detta tandpetare");
         }
     }
 }
