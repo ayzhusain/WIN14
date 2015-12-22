@@ -28,6 +28,10 @@ namespace WIN14_Project.StepDefenitions
         {
             driver.FindElement(By.Name("productName")).SendKeys("Tandpetare");
             driver.FindElement(By.Name("productDescription")).SendKeys("Håll dina munen ren med detta tandpetare");
+
+            driver.FindElement(By.Id("buy-button")).Click();
+
+            driver.FindElement(By.Id("go-to-checkout")).Click();
         }
     }
 }
