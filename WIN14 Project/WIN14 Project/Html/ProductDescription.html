@@ -11,20 +11,14 @@
     <script type="text/javascript">var jslang = 'SV';</script>
     <meta charset="UTF-8">
     <style>
-        label {
-            appearance: button;
-            -moz-appearance: button; /* Firefox */
-            -webkit-appearance: button; /* Safari and Chrome */
-            display: inline-block;
-            cursor: pointer;
-            background-color: red;
-            padding: 10px;
-        }
-
         body {
             padding: 70px;
         }
-
+        input {
+            padding: 6px 12px;
+            margin: 5px 0;
+            width: 250px;
+        }
         .shopping-cart {
             position: absolute;
             top: 0;
@@ -35,12 +29,13 @@
             padding: 10px;
             display: none;
         }
-
         .related-products img {
             width: 200px;
             max-height: 200px;
         }
-
+        hr {
+            margin: 50px 0;
+        }
     </style>
 
     <script type="text/javascript">
@@ -51,17 +46,10 @@
 
 </head>
 <body>
-
-
-
     <div id="shopping-cart" class="shopping-cart">
         <p>Tandpetare 1 st</p>
         <a href="ConfirmOrder.html">Gå till kassan</a>
     </div>
-
-
-
-
 
     <h1>Product Detail</h1>
     <div class="productDetails">
@@ -75,8 +63,6 @@
         <p>
             <input name="productDescription" value="">
         </p>
-
-
         <img src="../Content/images/Toothpick.jpg" />
         <br />
         Antal: 1 st<br />
@@ -84,10 +70,9 @@
         <br />
     </div>
 
-
     <hr />
-    Liknande produkter
     <table class="related-products">
+        <h3>Liknande produkter</h3>
         <tr>
             <td>
                 <img src="../Content/images/tandborste.jpg" />
