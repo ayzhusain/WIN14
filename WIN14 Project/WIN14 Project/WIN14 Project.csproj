@@ -116,6 +116,10 @@
     <Content Include="bin\WIN14 Project.dll" />
     <Content Include="bin\WIN14 Project.pdb" />
     <Content Include="Content\css\style.css" />
+    <Content Include="Content\images\tandborste.jpg" />
+    <Content Include="Content\images\tandtrad.jpg" />
+    <Content Include="Content\images\tandtrad2.jpg" />
+    <Content Include="Content\images\tandtradbage.jpg" />
     <Content Include="Content\images\Toothpick.jpg" />
     <Content Include="Content\images\Toothpick_mini.jpg" />
     <Content Include="Html\index.html" />
