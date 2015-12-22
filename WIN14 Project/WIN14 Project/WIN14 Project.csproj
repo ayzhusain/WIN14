@@ -116,6 +116,8 @@
     <Content Include="bin\WIN14 Project.dll" />
     <Content Include="bin\WIN14 Project.pdb" />
     <Content Include="Content\css\style.css" />
+    <Content Include="Content\images\Toothpick.jpg" />
+    <Content Include="Content\images\Toothpick_mini.jpg" />
     <Content Include="Html\index.html" />
     <Content Include="Html\ConfirmOrder.html" />
     <Content Include="Html\FeedbackPage.html" />
