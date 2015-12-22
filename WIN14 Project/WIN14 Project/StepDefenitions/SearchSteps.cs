@@ -16,7 +16,7 @@ namespace WIN14_Project
         public void GivenYouAreAtProductPage()
         {
             driver = new FirefoxDriver();
-            driver.Navigate().GoToUrl("https://localhost:2110/html/startPage.html");
+            driver.Navigate().GoToUrl("http://localhost:2110/html/startPage.html");
         }
 
         [When(@"You search for product")]
