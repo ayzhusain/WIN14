@@ -12,6 +12,11 @@
     <meta charset="UTF-8">
     <style>
 
+        #toggle{
+            display: none;
+        }
+
+
         label {
             appearance: button;
             -moz-appearance: button; /* Firefox */
@@ -25,7 +30,7 @@
             padding-top: 70px;
         }
         .shopping-cart{
-            display: none;
+
             position: absolute;
             top: 0;
             left: 0;
@@ -40,8 +45,10 @@
             display: block;
         }
 
+        
 
-                /* Toggled State */
+
+        /* Toggled State */
         input[type=checkbox]:checked ~ #toggle {
             display: block;
         }
@@ -52,7 +59,7 @@
 
 
 
-    <div class="shopping-cart">
+    <div id="toggle" class="shopping-cart">
         <p>Tandpetare 1 st</p>
         <a href="ConfirmOrder.html">Gå till kassan</a>
     </div>
