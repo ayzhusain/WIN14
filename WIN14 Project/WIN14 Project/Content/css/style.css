@@ -6,7 +6,6 @@
 }
 body{
   font-family: 'Comic Sans MS', sans-serif;
-  color: white;
   opacity: 1;
   font-weight: 300;
 }
@@ -100,3 +99,4 @@ form a.button:hover {
     padding: 0 40px;
     font-size: 20px;
 }
+
