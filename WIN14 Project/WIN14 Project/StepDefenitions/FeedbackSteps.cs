@@ -31,7 +31,7 @@ namespace WIN14_Project
         [Then(@"Press send and Show result")]
         public void ThenPressSendAndShowResult()
         {
-            Assert.True(driver.Title == "Feedback", "Feedback");
+            Assert.True(driver.Title == "Logged in", "Logged in");
         }
     }
 }
