@@ -89,6 +89,7 @@
     <Content Include="Html\index.html" />
     <Content Include="Html\ConfirmOrder.html" />
     <Content Include="Html\FeedbackPage.html" />
+    <Content Include="Html\ProductDescription.html" />
     <Content Include="Html\startPage.html" />
     <Content Include="Html\TrackOrder.html" />
     <Content Include="packages.config" />
@@ -107,6 +108,14 @@
     <Content Include="Features\Search.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Search.feature.cs</LastGenOutput>
+    </Content>
+    <Content Include="Features\ProductDescription.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ProductDescription.feature.cs</LastGenOutput>
+    </Content>
+    <Content Include="Features\Feedback.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Feedback.feature.cs</LastGenOutput>
     </Content>
     <None Include="SpecRunTestProfile.xsd">
       <SubType>Designer</SubType>
@@ -132,6 +141,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Feedback.feature</DependentUpon>
     </Compile>
+    <Compile Include="StepDefenitions\FeedbackSteps.cs" />
+    <Compile Include="Features\ProductDescription.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductDescription.feature</DependentUpon>
+    </Compile>
     <Compile Include="StepDefenitions\ConfirmOrderSteps.cs" />
     <Compile Include="StepDefenitions\LoginSteps.cs" />
     <Compile Include="Features\Login.feature.cs">
@@ -144,6 +159,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TrackOrder.feature</DependentUpon>
     </Compile>
+    <Compile Include="StepDefenitions\ProductDetailsSteps.cs" />
     <Compile Include="StepDefenitions\TrackOrderSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
